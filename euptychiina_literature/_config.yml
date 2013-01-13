@@ -1,0 +1,14 @@
+source: .
+safe: true
+auto: true
+destination: _site
+pygments: true
+lsi: false
+page:
+ description: Scientific literature on Euptychiina butterflies
+author:
+ name: Carlos Pena
+ email: mycalesis@gmail.com
+ github: carlosp420
+ twitter: carlosp420
+title: Literature on Euptychiina
