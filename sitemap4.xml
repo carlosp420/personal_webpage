@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.google.com/schemas/sitemap/0.84">
+
+	<url>
+		<loc>http://people.su.se/~cpena/Forsterinaria.html</loc>
+		<lastmod>2006-09-25</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+
+
+	<url>
+		<loc>http://people.su.se/~cpena/index.html</loc>
+		<lastmod>2006-09-25</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+
+
+	<url>
+		<loc>http://people.su.se/~cpena/links.html</loc>
+		<lastmod>2006-09-25</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+
+
+	<url>
+		<loc>http://people.su.se/~cpena/nhs.html</loc>
+		<lastmod>2006-09-25</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+
+
+	<url>
+		<loc>http://people.su.se/~cpena/publications.html</loc>
+		<lastmod>2006-09-25</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+
+
+	<url>
+		<loc>http://people.su.se/~cpena/Satyrinae_phylogeny.html</loc>
+		<lastmod>2006-09-25</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>1.0</priority>
+	</url>
+
+</urlset>

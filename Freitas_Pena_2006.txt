@@ -1,0 +1,10 @@
+@ARTICLE{freitas2006,
+	journal= "Zootaxa",
+	volume= "1163",
+	pages= "49--59",
+	year= "2006",
+	title= "Description of genus \emph{{G}uaianaza} for ``\emph{{E}uptychia}'' \emph{pronophila} ({L}epidoptera: {N}ymphalidae: {S}atyrinae) with a description of the immature stages",
+	author= "Andr{\'e} Victor Lucci Freitas
+	and Carlos Pe{\~n}a",
+	abstract= "The satyrine Euptychia pronophila Butler (Nymphalidae) was described in 1867 in the ``catch-all'' genus Euptychia, but was recently treated as incertae sedis. A DNA-based cladistic analysis confirms that it belongs to the Euptychiina, as sister to Forsterinaria and closely related to Taygetis, Posttaygetis, Parataygetis, Pseudodebis, and Harjesia. Although immature morphology also suggests that this species is closely related to Forsterinaria, none of the adult morphological synapomorphies for the genera in the aforementioned clade occur in E. pronophila, a highly autapomorphic species. Because we were unable to place it with confidence in an established genus, the monotypic satyrine genus Guaianaza Freitas & Peña New Genus is described, with Euptychia pronophila Butler as the type species. Atlantic forest, Forsterinaria, life history, Neotropics, Poaceae."
+}
