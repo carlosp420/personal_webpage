@@ -178,7 +178,6 @@ if( $twitter != "FALSE" ) {
 <meta content="gvim" name="GENERATOR" />
 <meta name="keywords" lang="en" content="department of genetics, butterflies,butterfly,evolution,phylogeny,Satyrinae,Neotropics,Nymphalidae,DNA, sequences, database" />
 <meta name="keywords" lang="es" content="mariposas, mariposa, evolucion, filogenia, Satyrinae, Neotropico, Nymphalidae" />
-<meta name="verify-v1" content="B7u3i9zQj0dOHMVQ2KnghInBeTjPdBvgBdQ2RmJVwgw=" />
 <meta content="Carlos Pe&ntilde;a's webpage on research on butterflies and moths" name="description" />
 <meta content="Carlos Pe&#241;a Bieberach" name="author" />
 <meta content="global" name="distribution" />
