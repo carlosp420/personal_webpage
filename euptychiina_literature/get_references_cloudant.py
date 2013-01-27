@@ -15,17 +15,6 @@ import couchdb;
 
 
 ## ---------------------------------------------------------------------------
-def format_citation(citation):
-	citation = re.sub("&#39;", "", citation);
-	citation = re.sub(", (\d{4}),", ". \\1.", citation);
-	citation = re.sub("^(.+\.\s\d{4}).", "<b>\\1.</b>", citation);
-	citation = re.sub(", vol\. (\d+),", ", <b>\\1</b>", citation);
-	citation = re.sub(" no\.\s(\d+),?", "(\\1): ", citation);
-	citation = re.sub("\s+pp\. (\d+-\d+)", " \\1.", citation);
-	return citation;
-
-
-## ---------------------------------------------------------------------------
 def get_from_couchdb(database):
 	all_references = [];
 	couch = couchdb.Server("http://localhost:5984");
@@ -37,6 +26,7 @@ def get_from_couchdb(database):
 
 	return all_references;
 	
+
 
 ## ---------------------------------------------------------------------------
 ## from Rod Page's biostor-cloud
@@ -108,6 +98,15 @@ def reference_to_citation_string(reference):
 		citation += "'>doi:" + doi + "</a>";
 
 	citation = citation.replace("///", "");
+
+	citation = clean_citation(citation);
+	return citation;
+
+
+
+## ---------------------------------------------------------------------------
+def clean_citation(citation):
+	citation = re.sub("\u00e9", "é", citation);
 	return citation;
 
 
@@ -136,28 +135,5 @@ for ref in all_references:
 	output += str(j) + ". " + ref + "\n";
 	j = j + 1;
 
-"""
-rows = content['rows'];
-j = 1;
-for i in rows:
-	storage2 = StringIO();
-	doc_id = i['id'];
-	c = pycurl.Curl();
-	url = "https://carlosp420:borisco2@carlosp420.cloudant.com/euptychiina/" + doc_id;
-	url = str(url);
-	c.setopt(pycurl.URL, url);
-	c.setopt(pycurl.WRITEFUNCTION, storage2.write);
-	c.perform();
-	c.close();
-	doc = storage2.getvalue();
-	doc = json.loads(doc);
-	#print doc;
-	citation = doc['fullCitation'];
-	citation = format_citation(citation);
-	citation += " <a href='dx.doi.org/" + doc['doi'] + "'>doi: " + doc['doi'] + "</a>";
-	output += str(j) + ". " + citation + "\n";
-	#print citation + "\n====================";
-	j = j + 1;
-"""
 
 print output.encode('utf8');
