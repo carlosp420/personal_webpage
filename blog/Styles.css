@@ -1,0 +1,196 @@
+img {
+	border: 0;
+}
+
+#pos1 {
+	position:absolute;
+	top:20px;
+	left:120px;
+	background-color: white;
+	width: 800px;
+}
+
+#header {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	background-color: #999966;
+	padding: 50px 0px 0px 0px;
+	width: 780px;
+	height: 100px;
+	margin: 10px 10px 10px 10px;
+}
+
+#menu-iz {
+	position: absolute;
+	top: 160px;
+	left: 550px;
+}
+
+#posts {
+	position: relative;
+	top: 0px;
+	left: 10px;
+	width: 480px;
+}
+
+#post3a {
+	position: static;
+	top: 650px;
+	left: 0px;
+	width: 320px;
+}
+
+#post3b {
+	position: absolute;
+	top: 1000px;
+	left: 300px;
+}
+
+a:link {
+  color:#f60;
+  text-decoration:none;
+  font: 10px "Verdana", Serif;
+  }
+a:visited {
+  color:#f60;
+  text-decoration:none;
+  }
+a:hover {
+  color:#960;
+  text-decoration:underline;
+  font-weight: bold;
+}
+
+body {
+  background:#CCCCCC;
+  margin:0;
+  padding:0px 0px;
+  font:10px "Verdana",Serif;
+  color:#333333;
+}
+
+table
+{
+  background-color: white;
+}
+
+.blog-title
+{
+	margin: 30px;
+	font-family: "Trebuchet MS", "Verdana", Geneva, Arial, SunSans-Regular, serif;
+	font-weight: bold;
+	font-size: 40px;
+	color:white;
+	background:#999966;
+	letter-spacing:.2em;
+}
+
+.date
+{
+	margin:10px 10px 10px;
+	font:10px "Verdana", Serif;
+	color:#666633;
+	background-color:white;
+}
+.hr1 {
+	margin:15px 20px 0px;
+	width:500px;
+	border: none;
+	border-top: 1px dotted #999;
+}
+.hr2 {
+	width:80%;
+	border: none;
+	border-top: 1px dotted blue;
+	margin: 25px 0px 25px; 
+}
+.ie {
+	background-color: #999966;
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	padding: 5px;
+	margin: 5px;
+	color: white;
+	font:13px "Verdana", Serif;
+}
+.post-title {
+  margin:0px 10px;
+  padding:0 0 4px;
+  font:20px "Trebuchet MS", Arial, serif;
+  font-weight:bold;
+  line-height:1.4em;
+  }
+
+.post-number {
+	font:22px "Verdana", Serif;
+	color:#666666;
+	background-color:white;
+}
+
+.post-photo {
+  margin:10px 10px 0px;
+  padding:4px;
+  border:1px solid #999999;
+  }
+.photo-by{
+	margin:0px 20px 0px;
+	color:#999999;
+	font:10px "Verdana", Serif;
+	background-color:white;
+}
+
+.posted {
+	margin:50px 20px 10px;
+	font:12px Georgia, Serif;
+	text-transform:uppercase;
+	color:#FF6600;
+	background-color:white;
+	font-weight:bold;
+}
+
+.profile-data {
+  font:bold "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  color:#763;
+  line-height:2.5em;
+  }
+
+
+.sidebar-title {
+	letter-spacing:.2em;
+	text-transform: uppercase;
+	color: #09c;
+	font-weight: bold;
+	}
+.sidebar-text {
+	color: #763;
+	line-height:1.5em;
+}
+
+
+.td1 {
+	height:400px;
+	text-align: center;
+}
+
+.text {
+	margin:15px 20px;
+	font-size: 12px;
+	font-family: Verdana, Serif;
+	color:#333333;
+	line-height:1.6em;
+	background-color:white;
+}
+
+.text-ref {
+	text-align: justify;
+	margin:15px 20px;
+	font-size: 11px;
+	font-family: Verdana, Serif;
+	color:#333333;
+	line-height: 1.5em;
+	background-color:white;
+}

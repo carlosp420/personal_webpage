@@ -1,0 +1,23 @@
+td
+{
+	padding: 0px 10px 0px 0px;
+	font-family: "Verdana", Arial, Serif;
+	font-size: 9px;
+}
+
+th
+{
+	color: black;
+}
+
+.d
+{
+	color: green;
+	font-weight: normal;
+}
+
+.m
+{
+	color: red;
+	font-weight: bold;
+}

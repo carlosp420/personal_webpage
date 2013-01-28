@@ -107,6 +107,8 @@ def reference_to_citation_string(reference):
 ## ---------------------------------------------------------------------------
 def clean_citation(citation):
 	citation = re.sub("\u00e9", "é", citation);
+#citation = re.sub(u'\u00eda', "í", citation);
+#citation = citation.replace(u'\u00eda', u'í');
 	return citation;
 
 
