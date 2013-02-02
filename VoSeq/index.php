@@ -134,6 +134,20 @@ function clean_string($string) {
 			<input type='submit' name='submit' value='Get Token' />
 		</form>
 
+
+
+
+		<h1>Alternative: Hosting voucher photos locally (own computer)</h1>
+		<p>
+			If you want to host all your photos in your computer you will have to edit your
+			<code>conf.php</code> file accordingly:
+			<ul>
+				<li>Look for the line <code>$photos_repository = 'flickr';</code></li>
+				<li>Using a text editor change it to: <code>$photos_repository = 'local';</code></li>
+				<li>Save the file and resume using VoSeq and you are ready to go!</li>
+			</ul>
+
+		</p>
 <?php 
 		}
 ?>
