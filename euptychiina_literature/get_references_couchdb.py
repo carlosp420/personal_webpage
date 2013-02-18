@@ -3,6 +3,7 @@
 
 import string;
 import re;
+import argparse;
 import codecs;
 import sys;
 import urllib2;
@@ -40,9 +41,14 @@ def reference_to_citation_string(reference):
 			if 'given' in author:
 				authors.append(author['family'] + " " + author['given']);
 			else:
-				tmp = author['name'];
-				tmp = tmp.replace(",", "");
-				authors.append(tmp);
+				try:
+					tmp = reference['author']['name'];
+					tmp = tmp.replace(",", "");
+					authors.append(tmp);
+				except:
+					tmp = author['name'];
+					tmp = tmp.replace(",", "");
+					authors.append(tmp);
 				
 		citation += ", ".join(authors);
 
@@ -78,11 +84,14 @@ def reference_to_citation_string(reference):
 	if 'volume' in reference:
 		citation += ", " + reference['volume'];
 	if 'issue' in reference:
-		citation += "(" + reference['issue'] + ")";
+		if len(reference['issue']) > 0:
+			citation += "(" + reference['issue'] + ")";
 	if 'number' in reference:
 		citation += "(" + reference['number'] + ")";
 	if 'page' in reference:
 		citation += ": " + reference['page'] + ".";
+	if 'pages' in reference:
+		citation += ": " + reference['pages'] + ".";
 	if 'start page' in reference:
 		citation += ": " + reference['start page'];
 	if 'end page' in reference:
@@ -107,35 +116,42 @@ def reference_to_citation_string(reference):
 ## ---------------------------------------------------------------------------
 def clean_citation(citation):
 	citation = re.sub("\u00e9", "é", citation);
-#citation = re.sub(u'\u00eda', "í", citation);
-#citation = citation.replace(u'\u00eda', u'í');
 	return citation;
 
 
+## ---------------------------------------------------------------------------
+def main():
+	description = """Pulls references from local couchdb.
+	Enter database name as argument.""";
 
-storage = StringIO();
+	parser = argparse.ArgumentParser(description=description);
+	parser.add_argument('-db', '--database', action='store', metavar='db',
+			nargs=1,
+			required=True, dest='db',
+			help='a couchdb');
+	args = parser.parse_args();
 
-"""
-c = pycurl.Curl();
-url = "https://carlosp420:borisco2@carlosp420.cloudant.com/euptychiina/_all_docs";
-c.setopt(pycurl.URL, url);
-c.setopt(pycurl.WRITEFUNCTION, storage.write);
-c.perform();
-c.close();
-content = storage.getvalue();
-content = json.loads(content);
-"""
+	db = args.db[0];
+
+	storage = StringIO();
+	
+	all_references = get_from_couchdb(db);
+	all_references.sort();
+
+	if db == "euptychiina":
+		output =  "###Literature on Euptychiina\n";
+	elif db == "lamas":
+		output =  "###Literature from Lamas (2013)\n";
+	
+	j = 1;
+	for ref in all_references:
+		output += str(j) + ". " + ref + "\n";
+		j = j + 1;
+	
+	
+	print output.encode('utf8');
 
 
-all_references = get_from_couchdb("euptychiina");
-all_references.sort();
 
-output =  "###Literature on Euptychiina\n";
-
-j = 1;
-for ref in all_references:
-	output += str(j) + ". " + ref + "\n";
-	j = j + 1;
-
-
-print output.encode('utf8');
+if __name__ == "__main__":
+	main()
