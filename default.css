@@ -412,7 +412,25 @@ code {
 	padding: 10px;
 }
 
-ul.drop li.hover, ul.drop li:hover { position: relative;  }
-ul.drop ul { visibility: hidden; position: absolute; padding: 0.5em; margin: 10px 0px 0px 0px; background: #7F8400; left:0; z-index: 598; width: 190px;}
-ul.drop ul li { line-height: 2.0em; float: none; color: #fff; padding: 0.5em; margin: 10px 0px 0px 0px;   }
-ul.drop li:hover > ul { visibility: visible; }
+
+#drop {
+	list-style: none;
+}
+#drop li {
+	float: left;
+	display: block;
+	position: relative;
+	z-index: 500;
+}
+#drop ul {
+	position: absolute;
+	display: none;
+	list-style: none;
+}
+#drop ul li {
+	float: left;
+}
+#drop ul a {
+display: block;
+}
+
