@@ -213,12 +213,17 @@ if( $twitter != "FALSE" ) {
 
 	<div id="menu">
 		<!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
-		<ul>
+		<ul class="drop">
 			<li><a href="index.php" class="active">Home</a></li>
 			<li><a href="publications.html">Publications</a></li>
 			<li><a href="software.html">Software</a></li>
-			<li><a href="Satyrinae_phylogeny.html">Satyrinae Phylogeny</a></li>
-			<li><a href="Forsterinaria.html"><i>Forsterinaria</i></a></li>
+			<li><a href="research.html">Research</a>
+				<ul>
+					<li><a href="">Satyrinae phylogeny</a></li>
+					<li><a href="Forsterinaria.html"><i>Forsterinaria</i></a></li>
+					<li><a href="euptychiina_references.html">Euptychiina references</a></li>
+				</ul>
+			</li>
 			<li><a href="http://nymphalidae.utu.fi/Vouchers.htm">Voucher's db</a></li>
 			<li><a href="http://www.nymphalidae.net/taxon_db/">Taxon db</a></li>
 			<li><a href="euptychiina_references.html">Euptychiina references</a></li>
