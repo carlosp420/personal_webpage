@@ -86,12 +86,46 @@
 						<div class="contentarea">
 							<div class="details">Posted on Nov 18, 2012
 							</div>
-							<p>Scripts to parse the "citations page" of Google Scholar written in Python and using <a href="http://www.icir.org/christian/scholar.html">scholar.py</a>.
+							<p>Scripts to parse the "citations page" of Google Scholar written in Python and using
+								<a href="http://www.icir.org/christian/scholar.html">scholar.py</a>.
 							
 							<br />
-							Download from github <a href="https://github.com/carlosp420/google_scholar_parser">https://github.com/carlosp420/google_scholar_parser</a>
+							Download from github <a href="https://github.com/carlosp420/google_scholar_parser">
+							https://github.com/carlosp420/google_scholar_parser</a>
 							<br />
-							<a href="https://github.com/carlosp420/google_scholar_parser"><img src="images/octocat.png" /></a> </span>
+							<p><b>Usage:</b></p>
+							<ul>
+								<li>Get citations for a publication using its DOI:<br />
+									<code>python scholar.py -c 1 10.1111/j.1096-3642.2009.00627.x</code></li>
+								<li>Output: <br />
+									<p class="code_block">Title The radiation of Satyrini butterflies (Nymphalidae:
+											Satyrinae)...     <br />
+										  URL http://onlinelibrary.wiley.com/doi/10.1111/j.1096-3642.2009.00627.x/full  <br />
+											Citations 14   <br />
+											Versions 6   <br />
+										Citations list http://scholar.google.com/scholar?cites=13407052944292989945&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=1   <br />
+										Versions list http://scholar.google.com/scholar?cluster=13407052944292989945&amp;hl=en&amp;num=1&amp;as_sdt=0,5   <br />
+												Year 2011    <br />
+									</p>
+								</li>
+								<li>Grab the Citations list page: <br />
+									<code>http://scholar.google.com/scholar?cites=13407052944292989945 </code><br />
+
+								And feed it to the script <code>scholar_cites.py</code>: <br />
+								<code>python scholar_cites.py http://scholar.google.com/scholar?cites=13407052944292989945 </code><br /> 
+
+								So you will get all the DOIs of publications citing your article (up to 100 DOIs): <br /> 
+								<p class="code_block">
+								10.1111/j.1463-6409.2010.00421.x   <br />
+								10.1146/annurev-ecolsys-102710-145024   <br />
+								10.1111/j.1420-9101.2011.02352.x   <br />
+								10.1111/j.1439-0469.2010.00587.x	 <br />
+								</p>
+									</li>
+							</ul>
+
+							<a href="https://github.com/carlosp420/google_scholar_parser">
+							<img src="images/octocat.png" /></a> </span>
 								
 							</p>
 							

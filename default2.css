@@ -387,10 +387,32 @@ bottom: 1.2em;
 }
 
 code {
-	color: #709800;
-	font-weight: bold;
-	font-size: 1.2em;
+	margin: 0px 2px;
+	padding: 0px 5px;
+	border: 1px solid #eaeaea;
+	background-color: #f8f8f8;
+	font-size: 12px;
+	font-family: Consolas, "Liberation Mono", Courier, monospace;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	line-height: 1.6;
 }
+
+
+.code_block {
+	margin: 0px 2px;
+	padding: 0px 5px;
+	border: 1px solid #eaeaea;
+	background-color: #f8f8f8;
+	font-size: 12px;
+	font-family: Consolas, "Liberation Mono", Courier, monospace;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	line-height: 1.6;
+}
+
 
 .highlight {
 	background-color: #C2FFFF;
