@@ -325,7 +325,7 @@ foreach( $dois as $doi ) {
 	echo "</div>";
 
 	echo "<div class='foot'>";
-	echo "<a href='#filter=publication' data-filter='.publication' class='filters'><img src='kpdf.png' alt='Filter publications' ";
+	echo "<a href='#filter=publication' data-filter='.publication' class='filters'><img src='images/kpdf.png' alt='Filter publications' ";
 	echo "title='Filter publications' /></a>";
 
 	echo "<a href='http://dx.doi.org/". $doi . "' title='DOI'><b>doi></b></a>";
