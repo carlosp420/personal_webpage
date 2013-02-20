@@ -186,7 +186,7 @@ if( $twitter != "FALSE" ) {
 <link rel="SHORTCUT ICON" href="favicon.ico" />
 <title>Dr. Carlos Peña - Evolutionary history of butterflies</title>
 
-	<link rel="stylesheet" type="text/css" href="default2.css" />
+	<link rel="stylesheet" type="text/css" href="default.css" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
 	
 	<script src="jquery/jquery.js"></script>
@@ -215,7 +215,7 @@ $(document).ready(function() {
 
 <div id="upbg"></div>
 
-<div id="outer">
+<div id="outer_index">
 <div itemscope itemtype="http://www.schema.org/Person">
 
 	<div id="header">

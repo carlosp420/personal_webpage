@@ -19,7 +19,7 @@ padding: 35px 0px 35px 0px;
 
 body,input
 {
-font-size: 10pt;
+font-size: 13px;
 font-family: "Open Sans", "georgia", "times new roman", serif;
 color: #333333;
 }
@@ -91,6 +91,8 @@ padding-top: 1.3em;
 img
 {
 border: 0px;
+margin-left: 4px;
+margin-right: 4px;
 }
 
 img.left
@@ -197,7 +199,7 @@ background: #fff url('images/bg2.jpg') repeat-x;
 z-index: 1;
 }
 
-#outer
+#outer_index
 {
 z-index: 2;
 position: relative;
@@ -206,6 +208,16 @@ position: relative;
 	(so it'll take up 82% of the browser window's width). You can set it to a different percentage
 	value (70%, 90%, etc.) or even a pixel value (760px, 800px, etc.) to enforce a fixed width.
 */
+width: 96%;
+border: solid 7px #fff;
+background-color: #fff;
+margin: 0 auto;
+}
+
+#outer
+{
+z-index: 2;
+position: relative;
 width: 82%;
 border: solid 7px #fff;
 background-color: #fff;
@@ -357,6 +369,7 @@ width: 18.0em;
 
 #footer
 {
+font-family: 'Open Sans', "Georgia", "Times New Roman", sans-serif;
 position: relative;
 height: 2.0em;
 clear: both;
@@ -370,6 +383,10 @@ font-size: 0.8em;
 position: absolute;
 left: 2.0em;
 bottom: 1.2em;
+}
+
+#footer .left img {
+margin: 1px;
 }
 
 #footer .right
@@ -410,6 +427,142 @@ code {
 	-webkit-border-radius: 5px; /* Safari, Chrome */
 	border-radius: 5px; /* CSS3 */
 	padding: 10px;
+}
+.shadow {
+	box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:         top, left, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/**** Isotope filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+
+.item {
+	font-family: 'Open Sans', "Georgia", "Times New Roman", sans-serif;
+	width: 295px;
+	margin: 0px 10px 10px 0px;
+	padding: 1em 1em .9em 1em;
+	display: block;
+	border: solid 1px #EBEBE1;
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.09);
+	-moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.09);
+	-webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.09);
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.item:hover {
+	border: solid 1px #7F8400;
+}
+
+.item ul {
+	margin-left: 10px;
+	padding-left: 1em;
+}
+
+.title {
+	font-family: 'Open Sans', "Georgia", "Times New Roman", sans-serif;
+}
+
+.body {
+	font-family: 'Open Sans', "Georgia", "Times New Roman", sans-serif;
+	clear: both;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.foot {
+	font-family: 'Open Sans', "Georgia", "Times New Roman", sans-serif;
+	height: 38px;
+}
+
+#showAll {
+	font-family: 'Open Sans', "Georgia", "Times New Roman", sans-serif;
+	display: block;
+	background-color: #FE6404;
+	color: white;
+	position: fixed;
+	font-size: 16px;
+	font-weight: bold;
+	z-index: 999;
+	padding: 10px;
+	right: 20px;
+	top: 0px;
+	text-decoration: none;
+
+
+	border-radius: 5px; /* CSS3 */
+	-moz-border-radius: 5px; /* Firefox */
+	-webkit-border-radius: 5px; /* Safari, Chrome */
+}
+
+#container {
+	display: none;
+}
+
+.position {
+	display: none;
 }
 
 
