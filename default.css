@@ -415,22 +415,32 @@ code {
 
 #drop {
 	list-style: none;
+	color: #fff;
 }
 #drop li {
 	float: left;
 	display: block;
 	position: relative;
 	z-index: 500;
+	margin: 0 1px;
 }
 #drop ul {
 	position: absolute;
+	left: 0;
 	display: none;
+	margin: 0 0 0 -1px;
+	padding: 0;
 	list-style: none;
+	background-color: #7f8400;
 }
 #drop ul li {
+	border-top: 1px solid #fff;
 	float: left;
+	width: 170px;
 }
 #drop ul a {
-display: block;
+	display: block;
+	height: 15px;
+	padding: 8px 5px;
 }
 
