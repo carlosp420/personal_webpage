@@ -196,6 +196,19 @@ if( $twitter != "FALSE" ) {
 	<script src="jquery/flickr.js"></script>
 	<script src="jquery/publications.js"></script>
 
+<script type="text/javascript">
+$(document).ready(function() {
+	$("#drop li").hover(
+		function() {
+			$("ul", this).stop().slideDown(100);
+		},
+		function() {
+			$("ul", this).stop().slideUp(100);
+		}
+	);
+});
+</script>
+
 </head>
 <body>
 <a href='#filter=showAll' id="showAll" style="DISPLAY:none" data-filter='*' class='filters'>show all</a>
@@ -213,11 +226,11 @@ if( $twitter != "FALSE" ) {
 
 	<div id="menu">
 		<!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
-		<ul class="drop">
+		<ul id="drop">
 			<li><a href="index.php" class="active">Home</a></li>
 			<li><a href="publications.html">Publications</a></li>
 			<li><a href="software.html">Software</a></li>
-			<li><a href="research.html">Research</a>
+			<li style="width: 100px;text-align: center;"><a href="#">Research</a>
 				<ul>
 					<li><a href="">Satyrinae phylogeny</a></li>
 					<li><a href="Forsterinaria.html"><i>Forsterinaria</i></a></li>
@@ -226,7 +239,6 @@ if( $twitter != "FALSE" ) {
 			</li>
 			<li><a href="http://nymphalidae.utu.fi/Vouchers.htm">Voucher's db</a></li>
 			<li><a href="http://www.nymphalidae.net/taxon_db/">Taxon db</a></li>
-			<li><a href="euptychiina_references.html">Euptychiina references</a></li>
 			<li><a href="http://nsg-databases.blogspot.com">Blog</a></li>
 		</ul>
 	</div>
