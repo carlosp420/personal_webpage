@@ -200,10 +200,10 @@ if( $twitter != "FALSE" ) {
 $(document).ready(function() {
 	$("#drop li").hover(
 		function() {
-			$("ul", this).stop().slideDown(100);
+			$("ul", this).slideDown(100);
 		},
 		function() {
-			$("ul", this).stop().slideUp(100);
+			$("ul", this).slideUp(100);
 		}
 	);
 });
@@ -232,7 +232,7 @@ $(document).ready(function() {
 			<li><a href="software.html">Software</a></li>
 			<li style="width: 100px;text-align: center;"><a href="#">Research</a>
 				<ul>
-					<li><a href="">Satyrinae phylogeny</a></li>
+					<li><a href="Satyrinae_phylogeny.html">Satyrinae phylogeny</a></li>
 					<li><a href="Forsterinaria.html"><i>Forsterinaria</i></a></li>
 					<li><a href="euptychiina_references.html">Euptychiina references</a></li>
 				</ul>
