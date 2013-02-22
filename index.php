@@ -392,7 +392,6 @@ foreach( $dois as $doi ) {
 				<div class="body">
 					<?php
 					$github_json = json_decode(get_from_URL("https://api.github.com/users/carlosp420/events"));
-					//print_r($github_json);exit(0);
 					$output_gh = "<ul>";
 					$i = 0;
 					foreach($github_json as $event) {
@@ -406,13 +405,20 @@ foreach( $dois as $doi ) {
 						elseif($event_type == "DownloadEvent") {
 							$output_gh .= "<li>carlosp420 downloaded ";
 						}
+						elseif($event_type == "DeleteEvent") {
+							$output_gh .= "<li>carlosp420 deleted ";
+						}
 						preg_match("/refs\/heads\/(.+)/", trim($event->payload->ref), $match);
-						if( $match[1] ) {
-							$output_gh .= $match[1];
+						if( count($match) > 0) {
+							if( $match[1] ) {
+								$output_gh .= $match[1];
+							}
 						}
 						$output_gh .= " at <i><a href='https://github.com/" . $event->repo->name;
 						$output_gh .= "'>" . str_replace("carlosp420/", "", $event->repo->name) . "</a></i>";
-						$output_gh .= ": <i>'".  $event->payload->commits[0]->message . "'</i>";
+						if( property_exists($event, "commits") ) {
+							$output_gh .= ": <i>'".  $event->payload->commits[0]->message . "'</i>";
+						}
 						preg_match("/\d{4}-\d{1,2}-\d{1,2}/", $event->created_at, $match2);
 						if( $match2[0] ) {
 							$output_gh .= " on ". $match2[0] . ".";
