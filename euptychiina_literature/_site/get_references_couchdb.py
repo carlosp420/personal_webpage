@@ -141,7 +141,13 @@ def main():
 	if db == "euptychiina":
 		output =  "###Literature on Euptychiina\n";
 	elif db == "lamas":
-		output =  "###Literature from Lamas (2013)\n";
+		output =  "###Literature from Lamas (2013)  \n\n";
+		output += "I am parsing Gerardo Lamas' list of bibliographic literature on Neotropical butterflies from 2013. ";
+		output += "All parsed references are hosted in a local **couchdb** in **bibjson";
+		output += " format** for creating mashups in the near future.  \n\n";
+		output += "*  Lamas, G. (2013). An Annotated Bibliography of the Neotropical butterflies and skippers (Lepidoptera";
+		output += ": Papilionoidea and Hesperioidea). <a href='Lamas_2013_Annotated_Bibliography.pdf'>";
+		output += "<img src='images/kpdf.png' /></a>  \n\n";
 	
 	j = 1;
 	for ref in all_references:
