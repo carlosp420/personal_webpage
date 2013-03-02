@@ -409,10 +409,16 @@ foreach( $dois as $doi ) {
 						elseif($event_type == "DeleteEvent") {
 							$output_gh .= "<li>carlosp420 deleted ";
 						}
-						preg_match("/refs\/heads\/(.+)/", trim($event->payload->ref), $match);
-						if( count($match) > 0) {
-							if( $match[1] ) {
-								$output_gh .= $match[1];
+						elseif($event_type == "WatchEvent") {
+							$output_gh .= "<li>carlosp420 is watching a repo ";
+						}
+						//print_r($event);
+						if( isset($event->payload->ref) ) {
+							preg_match("/refs\/heads\/(.+)/", trim($event->payload->ref), $match);
+							if( count($match) > 0) {
+								if( $match[1] ) {
+									$output_gh .= $match[1];
+								}
 							}
 						}
 						$output_gh .= " at <i><a href='https://github.com/" . $event->repo->name;
