@@ -22,8 +22,9 @@ def get_from_couchdb(database):
 	db = couch[database];
 	for id in db:
 		reference = db[id];
-		ref = reference_to_citation_string(reference);
-		all_references.append(ref);
+		if 'title' in reference:
+			ref = reference_to_citation_string(reference);
+			all_references.append(ref);
 
 	return all_references;
 	
@@ -80,7 +81,7 @@ def reference_to_citation_string(reference):
 	if 'container-title' in reference:
 		citation += " <i>" + reference['container-title'] + "</i>";
 	if 'journal' in reference:
-		citation += " <i>" + reference['journal'] + "</i>";
+		citation += " <i>" + reference['journal'].strip() + "</i>";
 	if 'volume' in reference:
 		citation += ", " + reference['volume'];
 	if 'issue' in reference:
