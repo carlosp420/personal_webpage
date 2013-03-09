@@ -32,6 +32,7 @@ def get_from_couchdb(database):
 
 ## ---------------------------------------------------------------------------
 ## from Rod Page's biostor-cloud
+## input should be a valid bibjson object
 def reference_to_citation_string(reference):
 	citation = "<b>";
 	
@@ -43,15 +44,16 @@ def reference_to_citation_string(reference):
 				authors.append(author['family'] + " " + author['given']);
 			else:
 				try:
-					tmp = reference['author']['name'];
-					tmp = tmp.replace(",", "");
+					tmp  = author['lastname'];
+					tmp += ", ";
+					tmp += author['firstname'];
 					authors.append(tmp);
 				except:
 					tmp = author['name'];
 					tmp = tmp.replace(",", "");
 					authors.append(tmp);
 				
-		citation += ", ".join(authors);
+		citation += "; ".join(authors);
 
 	if len(authors) == 0:
 		authors.append(reference['author']);
@@ -80,23 +82,30 @@ def reference_to_citation_string(reference):
 
 	if 'container-title' in reference:
 		citation += " <i>" + reference['container-title'] + "</i>";
+
+	 # journal
 	if 'journal' in reference:
-		citation += " <i>" + reference['journal'].strip() + "</i>";
-	if 'volume' in reference:
-		citation += ", " + reference['volume'];
-	if 'issue' in reference:
-		if len(reference['issue']) > 0:
-			citation += "(" + reference['issue'] + ")";
-	if 'number' in reference:
-		citation += "(" + reference['number'] + ")";
-	if 'page' in reference:
-		citation += ": " + reference['page'] + ".";
-	if 'pages' in reference:
-		citation += ": " + reference['pages'] + ".";
-	if 'start page' in reference:
-		citation += ": " + reference['start page'];
-	if 'end page' in reference:
-		citation += "-" + reference['end page'] + ".";
+		if 'name' in reference['journal']:
+			citation += " <i>" + reference['journal']['name'].strip() + "</i>";
+
+		if 'volume' in reference['journal']:
+			citation += ", " + reference['journal']['volume'];
+
+		if 'issue' in reference['journal']:
+			if len(reference['journal']['issue']) > 0:
+				citation += "(" + reference['journal']['issue'] + ")";
+
+		if 'number' in reference['journal']:
+			citation += "(" + reference['journal']['number'] + ")";
+
+		if 'page' in reference['journal']:
+			citation += ": " + reference['journal']['page'] + ".";
+		if 'pages' in reference['journal']:
+			citation += ": " + reference['journal']['pages'].replace("--", "-") + ".";
+		if 'start page' in reference['journal']:
+			citation += ": " + reference['journal']['start page'];
+		if 'end page' in reference['journal']:
+			citation += "-" + reference['journal']['end page'] + ".";
 
 	if 'doi' in reference:
 		doi = reference['doi']
@@ -106,6 +115,13 @@ def reference_to_citation_string(reference):
 		doi = reference['DOI']
 		citation += " <a href='http://dx.doi.org/" + doi;
 		citation += "'>doi:" + doi + "</a>";
+	elif 'identifier' in reference:
+		if 'type' in reference['identifier']:
+			if reference['identifier']['type'] == 'DOI':
+				doi = reference['identifier']['id'];
+				citation += " <a href='http://dx.doi.org/" + doi;
+				citation += "'>doi:" + doi + "</a>";
+			
 
 	citation = citation.replace("///", "");
 
