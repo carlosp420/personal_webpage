@@ -47,6 +47,7 @@ def reference_to_citation_string(reference):
 					tmp  = author['lastname'];
 					tmp += ", ";
 					tmp += author['firstname'];
+					tmp = re.sub("^,\s*", "", tmp);
 					authors.append(tmp);
 				except:
 					tmp = author['name'];
