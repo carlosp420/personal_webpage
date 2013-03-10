@@ -88,25 +88,37 @@ def reference_to_citation_string(reference):
 	if 'journal' in reference:
 		if 'name' in reference['journal']:
 			citation += " <i>" + reference['journal']['name'].strip() + "</i>";
+		else:
+			try:
+				citation += " <i>" + reference['journal'].strip() + "</i>";
+			except:	
+				citation += "";
 
 		if 'volume' in reference['journal']:
 			citation += ", " + reference['journal']['volume'];
+		elif 'volume' in reference:
+			citation += ", " + reference['volume'];
 
 		if 'issue' in reference['journal']:
 			if len(reference['journal']['issue']) > 0:
 				citation += "(" + reference['journal']['issue'] + ")";
+		elif 'issue' in reference:
+			if len(reference['issue']) > 0:
+				citation += "(" + reference['issue'] + ")";
 
 		if 'number' in reference['journal']:
 			citation += "(" + reference['journal']['number'] + ")";
+		elif 'number' in reference:
+			citation += "(" + reference['number'] + ")";
 
 		if 'page' in reference['journal']:
 			citation += ": " + reference['journal']['page'] + ".";
 		if 'pages' in reference['journal']:
 			citation += ": " + reference['journal']['pages'].replace("--", "-") + ".";
-		if 'start page' in reference['journal']:
-			citation += ": " + reference['journal']['start page'];
-		if 'end page' in reference['journal']:
-			citation += "-" + reference['journal']['end page'] + ".";
+		if 'start page' in reference:
+			citation += ": " + reference['start page'];
+		if 'end page' in reference:
+			citation += "-" + reference['end page'] + ".";
 
 	if 'doi' in reference:
 		doi = reference['doi']
