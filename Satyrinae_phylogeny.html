@@ -1,26 +1,34 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-
-	zenlike1.0 by nodethirtythree design
-	http://www.nodethirtythree.com
-
--->
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta content="gvim" name="GENERATOR" />
-<meta name="keywords" lang="en" content="butterflies,butterfly,evolution,phylogeny,Satyrinae,Neotropics,Nymphalidae" />
-<meta name="keywords" lang="es" content="mariposas, mariposa, evolucion, filogenia, Satyrinae, Neotropico, Nymphalidae" />
-<meta content="Phylogenetics of the subfamily of butterflies Satyrinae" name="description" />
-<meta content="Carlos Pe&#241;a Bieberach" name="author" />
-<meta content="global" name="distribution" />
-<meta name="REVISIT-AFTER" content="7 days" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="SHORTCUT ICON" href="favicon.ico" />
-<title>Phylogeny of Satyrinae</title>
+    <meta charset="utf-8" />
+    <meta content="gvim" name="GENERATOR" />
+    <meta name="keywords" lang="en" content="butterflies,butterfly,evolution,phylogeny,Satyrinae,Neotropics,Nymphalidae" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" lang="es" content="mariposas, mariposa, evolucion, filogenia, Satyrinae, Neotropico, Nymphalidae" />
+    <meta content="Phylogenetics of the subfamily of butterflies Satyrinae" name="description" />
+    <meta content="Carlos Pe&#241;a Bieberach" name="author" />
+    <meta content="global" name="distribution" />
+    <meta name="REVISIT-AFTER" content="7 days" />
+    <title>Phylogeny of Satyrinae</title>
 
-<script src="jquery/jquery.js"></script>
+    <!-- Le styles -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
 
-<link rel="stylesheet" type="text/css" href="default.css" />
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="jquery/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="img/favicon.ico">
+
+
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
 
 
@@ -34,71 +42,63 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
-
-$(document).ready(function() {
-	$("#drop li").hover(
-		function() {
-			$("ul", this).slideDown(100);
-		},
-		function() {
-			$("ul", this).slideUp(100);
-		}
-	);
-});
-
 </script>
 
 
 </head>
 
 <body>
-<div id="upbg"></div>
 
-<div id="outer">
+	<div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="#">Dr. Carlos Pe&ntilde;a</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+			            <li><a href="index.php">Home</a></li>
+			            <li><a href="publications.html">Publications</a></li>
+                        <li class="dropdown">
+                            <a href="software.html" class="dropdown-toggle" 
+                                                              data-toggle="dropdown">Software <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="software.html#google_scholar_parser">Google Scholar citations</a></li>
+                                <li><a href="software.html#voseq">Voseq</a></li>
+                                <li><a href="software.html#pbs">Partitioned Bremer Support</a></li>
+                            </ul>
+                        </li>
 
-	<div id="header">
-		<div id="headercontent">
-			<h1>Dr. Carlos Pe&ntilde;a</h1>
-		</div>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+				            <ul class="dropdown-menu">
+					            <li class="active"><a href="Satyrinae_phylogeny.html">Satyrinae phylogeny</a></li>
+					            <li><a href="Forsterinaria.html"><i>Forsterinaria</i></a></li>
+					            <li><a href="euptychiina_references.html">Euptychiina references</a></li>
+					            <li><a href="lamas_references.html">Lamas references</a></li>
+				            </ul>
+			            </li>
+			            <li><a href="http://nymphalidae.utu.fi/Vouchers.htm">Voucher's db</a></li>
+			            <li><a href="http://www.nymphalidae.net/taxon_db/">Taxon db</a></li>
+			            <li><a href="http://nsg-databases.blogspot.com">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 	</div>
 
 
-	<div id="menu">
-		<!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
-		<ul id="drop">
-			<li><a href="./">Home</a></li>
-			<li><a href="publications.html">Publications</a></li>
-			<li><a href="software.html">Software</a></li>
-			<li style="width: 100px;text-align: center;"><a href="#" class="active">Research</a>
-				<ul>
-					<li><a href="Satyrinae_phylogeny.html">Satyrinae phylogeny</a></li>
-					<li><a href="Forsterinaria.html"><i>Forsterinaria</i></a></li>
-					<li><a href="euptychiina_references.html">Euptychiina references</a></li>
-					<li><a href="lamas_references.html">Lamas references</a></li>
-				</ul>
-			</li>
-			<li><a href="http://nymphalidae.utu.fi/Vouchers.htm">Voucher's db</a></li>
-			<li><a href="http://www.nymphalidae.net/taxon_db/">Taxon db</a></li>
-			<li><a href="http://nsg-databases.blogspot.com">Blog</a></li>
-		</ul>
+<div class="container-fluid">
 
-
-
-
-	</div>
-	<div id="menubottom"></div>
-	
- 
-	<div id="content">
-
-		<!-- Normal content: Stuff that's not going to be put in the left or right column. -->
-		<div id="normalcontent">
-			<h4>Higher level systematics of the subfamily Satyrinae</h4>
-			<div class="contentarea">
-				<!-- Normal content area start -->
-
+    <div class="row-fluid">
+		<h3>Higher level systematics of the subfamily Satyrinae</h3>
+        <div class="span3">
 				<img src="images/satyrinae_tree.gif" class="left" alt="" />
+        </div>
+        <div class="span4">
                 <p>
 					We had almost no understanding about the patterns of relationships
 					within the most diverse group of butterflies belonging to Nymphalidae,
@@ -121,22 +121,10 @@ $(document).ready(function() {
 					working on a phylogeny for Satyrinae and related subfamilies, like 
 					Calinaginae, Charaxinae and Morphinae.
                 </p>
-	
-          <!-- Normal content area end -->
-			</div>
-		</div>
+        </div>
 
-	
-		<div class="divider1"></div>
-
-		<!-- Primary content: Stuff that goes in the primary content column (by default, the left column) -->
-		<div id="primarycontainer">
-			<div id="primarycontent">
-				<!-- Primary content area start -->
-		
-				<div class="post">
+        <div class="span4">
 	                <h4>Resources</h4>
-                    <div class="contentarea">
                         <ul>
                             <li>Our dataset in TNT format is here: <a href="http://dx.doi.org/10.6084/m9.figshare.628089">
 								<img src="images/txt.png" alt="text file" /></a></li>
@@ -147,14 +135,21 @@ $(document).ready(function() {
 		                    <li>We used <a href="http://mrbayes.csit.fsu.edu/">MrBayes <img src='images/lo.gif' alt='' /></a> for the Bayesian analysis.</li>	
 		                    <li>Pictures of <a href="http://nymphalidae.utu.fi/links.php?id=pena2006">vouchers</a> used for this publication.</li>
                         </ul>
-	
-					</div>
-				</div>
-		
-				<div class="divider2"></div>
-				<div class="post">
+        </div>
+
+    </div><!-- row-fluid -->
+
+    
+
+
+
+
+    
+
+
+    <div class="row-fluid">
+        <div class="span10">
 					<h4>Publications</h4>
-					<div class="contentarea">
 	                    <ul>
 							<li><a href="Pena_Nylin_Wahlberg_2011.pdf"><img src="images/kpdf.png" alt="pdf" /></a>
 								<b>Pe&ntilde;a, C.</b>, Nylin, S., &amp; Wahlberg, N. 2011. The radiation of Satyrini butterflies (Nymphalidae: Satyrinae): a challenge for phylogenetic methods. <i>Zoological Journal of the Linnean Society</i>, <b>161</b>(1): 64-87. | <a href="http://dx.doi.org/10.1111/j.1096-3642.2009.00627.x">doi: 10.1111/j.1096-3642.2009.00627.x</a></li>
@@ -165,22 +160,29 @@ $(document).ready(function() {
                             <li><a href="http://nymphalidae.utu.fi/Penaetal2006.pdf"><img src="images/kpdf.png" alt="pdf" /></a>
 	<b>Pe&#241;a, C.</b>, N. Wahlberg, E. Weingartner, U. Kodandaramaiah, S. Nylin, A.V.L. Freitas &#38; A.V.Z. Brower. 2006. Higher level phylogeny of Satyrinae butterflies (Lepidoptera: Nymphalidae) based on DNA sequence data. <em>Molecular Phylogenetics and Evolution</em> <b>40</b>(1): 29-49. | <a href="http://dx.doi.org/10.1016/j.ympev.2006.02.007">doi:10.1016/j.ympev.2006.02.007</a></li>
 	                    </ul>
-					</div>
-				</div>
-
-				<!-- Primary content area end -->
-			</div>
-		</div>
+        </div>
+    </div><!-- row-fluid -->
 
 
 
-	</div>
+	<footer id="footer">
+			<div class="left">&copy; 2013 Nymphalidae Systematics Group</div>
+	</footer>
 
-	<div id="footer">
-			<div class="right">Design by <a href="http://www.nodethirtythree.com/">NodeThirtyThree Design</a></div>
-	</div>
+
+</div><!-- container -->
+
+
 	
-</div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="jquery/google-analytics.js"></script>
+
+    <script src="jquery/jquery.js"></script>
+    <script src="jquery/bootstrap.min.js"></script>
+    <script src="jquery/citations.js" type="text/javascript"></script>
 
 
 

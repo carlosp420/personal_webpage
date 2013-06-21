@@ -1,163 +1,144 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-
-	zenlike1.0 by nodethirtythree design
-	http://www.nodethirtythree.com
-
--->
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta content="gvim" name="GENERATOR" />
+    <meta charset="utf-8" />
+    <meta content="gvim" name="GENERATOR" />
+    <meta name="keywords" lang="es" content="soporte de bremer paticionado, mariposas, mariposa, evolucion, filogenia, Satyrinae, Neotropico, Nymphalidae" />
+    <meta name="keywords" content="partitioned, bremer, support, Partitioned Bremer Support, VoSeq, DNA sequences and voucher database for phylogenetic analysis, DNA, molecular, voucher, morphological, phylogeny, analysis, analyses" />
 
-<meta name="keywords" lang="es" content="soporte de bremer paticionado, mariposas, mariposa, evolucion, filogenia, Satyrinae, Neotropico, Nymphalidae" />
-<meta name="keywords" content="partitioned, bremer, support, Partitioned Bremer Support, VoSeq, DNA sequences and voucher database for phylogenetic analysis, DNA, molecular, voucher, morphological, phylogeny, analysis, analyses" />
+    <meta name="description" content="Software for phylogenetics and systematics. Partitioned Bremer Support using TNT. VoSeq: a voucher and DNA sequence database for phylogenetic analysis" />
 
-<meta name="description" content="Software for phylogenetics and systematics. Partitioned Bremer Support using TNT. VoSeq: a voucher and DNA sequence database for phylogenetic analysis" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Carlos Peña Bieberach" name="author" />
+    <meta content="global" name="distribution" />
+    <meta name="REVISIT-AFTER" content="7 days" />
+    <title>Dr. Carlos Peña - Software</title>
 
-<meta content="Carlos Peña Bieberach" name="author" />
-<meta content="global" name="distribution" />
-<meta name="REVISIT-AFTER" content="7 days" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="SHORTCUT ICON" href="favicon.ico" />
-<title>Dr. Carlos Peña - Software</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" type="text/css" href="default.css" />
+    <!-- Le styles -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="jquery/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="img/favicon.ico">
+
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
 
 
-<script src="jquery/jquery.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-33283726-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-$(document).ready(function() {
-	$("#drop li").hover(
-		function() {
-			$("ul", this).slideDown(100);
-		},
-		function() {
-			$("ul", this).slideUp(100);
-		}
-	);
-});
-
-</script>
 
 </head>
+
 <body>
 
-<div id="upbg"></div>
-
-<div id="outer">
-
-
-	<div id="header">
-		<div id="headercontent">
-			<h1>Dr. Carlos Pe&ntilde;a</h1>
-		</div>
+	<div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="brand" href="#">Dr. Carlos Pe&ntilde;a</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+			            <li><a href="index.php">Home</a></li>
+			            <li><a href="publications.html">Publications</a></li>
+                        <li class="dropdown active">
+                            <a href="software.html" class="dropdown-toggle" 
+                                                              data-toggle="dropdown">Software <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="software.html#google_scholar_parser">Google Scholar citations</a></li>
+                                <li><a href="software.html#voseq">Voseq</a></li>
+                                <li><a href="software.html#pbs">Partitioned Bremer Support</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+				            <ul class="dropdown-menu">
+					            <li><a href="Satyrinae_phylogeny.html">Satyrinae phylogeny</a></li>
+					            <li><a href="Forsterinaria.html"><i>Forsterinaria</i></a></li>
+					            <li><a href="euptychiina_references.html">Euptychiina references</a></li>
+					            <li><a href="lamas_references.html">Lamas references</a></li>
+				            </ul>
+			            </li>
+			            <li><a href="http://nymphalidae.utu.fi/Vouchers.htm">Voucher's db</a></li>
+			            <li><a href="http://www.nymphalidae.net/taxon_db/">Taxon db</a></li>
+			            <li><a href="http://nsg-databases.blogspot.com">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 	</div>
 
 
+<div class="container-fluid">
 
+    <div class="row-fluid">
+        <div class="span10">
+            <h3>A parser for Google Scholar's citations list<a name="google_scholar_parser"> </a></h3>
+	        <small>Posted on Nov 18, 2012</small>
+	<p>Scripts to parse the "citations page" of Google Scholar written in Python and using
+		<a href="http://www.icir.org/christian/scholar.html">scholar.py</a>.
 	
-	<div id="menu">
-		<!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
-		<ul id="drop">
-			<li><a href="index.php">Home</a></li>
-			<li><a href="publications.html">Publications</a></li>
-			<li><a href="software.html" class="active">Software</a></li>
-			<li style="width: 100px;text-align: center;"><a href="#">Research</a>
-				<ul>
-					<li><a href="Satyrinae_phylogeny.html">Satyrinae phylogeny</a></li>
-					<li><a href="Forsterinaria.html"><i>Forsterinaria</i></a></li>
-					<li><a href="euptychiina_references.html">Euptychiina references</a></li>
-					<li><a href="lamas_references.html">Lamas references</a></li>
-				</ul>
-			</li>
-			<li><a href="../Vouchers.htm">Voucher's db</a></li>
-			<li><a href="http://www.nymphalidae.net/taxon_db/">Taxon db</a></li>
-			<li><a href="http://nsg-databases.blogspot.com">Blog</a></li>
-		</ul>
-	</div>
-	<div id="menubottom"></div>
-
-	
-	<div id="content">
-		<div id="normalcontent">
-		</div>
-			<div id="primarycontainer">
-				<div id="primarycontent">
-					<!-- Primary content area start -->
-
-
-					<div class="post">
-						<h3>A parser for Google Scholar's citations list<a name="google_scholar_parser"> </a></h3>
-						<div class="contentarea">
-							<div class="details">Posted on Nov 18, 2012
-							</div>
-							<p>Scripts to parse the "citations page" of Google Scholar written in Python and using
-								<a href="http://www.icir.org/christian/scholar.html">scholar.py</a>.
-							
-							<br />
-							Download from github <a href="https://github.com/carlosp420/google_scholar_parser">
-							https://github.com/carlosp420/google_scholar_parser</a>
-							<br />
-							<p><b>Usage:</b></p>
-							<ul>
-								<li>Get citations for a publication using its DOI:<br />
-									<code>python scholar.py -c 1 10.1111/j.1096-3642.2009.00627.x</code></li>
-								<li>Output: <br />
-									<p class="code_block">Title The radiation of Satyrini butterflies (Nymphalidae:
-											Satyrinae)...     <br />
-										  URL http://onlinelibrary.wiley.com/doi/10.1111/j.1096-3642.2009.00627.x/full  <br />
-											Citations 14   <br />
-											Versions 6   <br />
-										Citations list http://scholar.google.com/scholar?cites=13407052944292989945&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=1   <br />
-										Versions list http://scholar.google.com/scholar?cluster=13407052944292989945&amp;hl=en&amp;num=1&amp;as_sdt=0,5   <br />
-												Year 2011    <br />
-									</p>
-								</li>
-								<li>Grab the Citations list page: <br />
-									<code>http://scholar.google.com/scholar?cites=13407052944292989945 </code><br />
-
-								And feed it to the script <code>scholar_cites.py</code>: <br />
-								<code>python scholar_cites.py http://scholar.google.com/scholar?cites=13407052944292989945 </code><br /> 
-
-								So you will get all the DOIs of publications citing your article (up to 100 DOIs): <br /> 
-								<p class="code_block">
-								10.1111/j.1463-6409.2010.00421.x   <br />
-								10.1146/annurev-ecolsys-102710-145024   <br />
-								10.1111/j.1420-9101.2011.02352.x   <br />
-								10.1111/j.1439-0469.2010.00587.x	 <br />
-								</p>
-									</li>
-							</ul>
-
-							<a href="https://github.com/carlosp420/google_scholar_parser">
-							<img src="images/octocat.png" /></a> </span>
+	    <br />
+	    Download from github <a href="https://github.com/carlosp420/google_scholar_parser">
+	    https://github.com/carlosp420/google_scholar_parser</a>
+		<a href="https://github.com/carlosp420/google_scholar_parser">
+		<img src="images/octocat.png" /></a>
 								
-							</p>
-							
-						</div>
-					</div>
-					<br/>
-					<br/>
+	    <br />
+	    <p><b>Usage:</b></p>
+	    <ul>
+		    <li>Get citations for a publication using its DOI:<br />
+			<code>python scholar.py -c 1 10.1111/j.1096-3642.2009.00627.x</code></li>
+		    <li>Output: <br />
+<pre>
+Title The radiation of Satyrini butterflies (Nymphalidae: Satyrinae)...
+URL http://onlinelibrary.wiley.com/doi/10.1111/j.1096-3642.2009.00627.x/full 
+Citations 14
+Versions 6
+Citations list http://scholar.google.com/scholar?cites=13407052944292989945&amp;as_sdt=2005&amp;sciodt=0,5&amp;hl=en&amp;num=1
+Versions list http://scholar.google.com/scholar?cluster=13407052944292989945&amp;hl=en&amp;num=1&amp;as_sdt=0,5
+Year 2011
+</pre>
+			</li>
+			<li>Grab the Citations list page: <br />
+				<code>http://scholar.google.com/scholar?cites=13407052944292989945 </code><br />
+
+				And feed it to the script <code>scholar_cites.py</code>: <br />
+				<code>python scholar_cites.py http://scholar.google.com/scholar?cites=13407052944292989945 </code><br /> 
+
+				So you will get all the DOIs of publications citing your article (up to 100 DOIs): <br /> 
+<pre>
+10.1111/j.1463-6409.2010.00421.x
+10.1146/annurev-ecolsys-102710-145024
+10.1111/j.1420-9101.2011.02352.x  
+10.1111/j.1439-0469.2010.00587.x
+</pre>
+			</li>
+		</ul>
+	    </p>
+        </div>
+    </div> <!-- row-fluid -->
+
+    <hr>
 
 
-
-					<div class="post">
+    <div class="row-fluid">
+        <div class="span10">
 						<h3>VoSeq: a voucher and DNA sequence database for phylogenetic analysis<a name="voseq"> </a></h3>
-						<div class="contentarea">
-							<div class="details">Posted on May 14, 2012
-							</div>
+                        <small>Posted on May 14, 2012</small>
 							<p>
 								<span itemprop="description">
 									<span itemprop="name"><b>VoSeq</b></span> is a database to store voucher and DNA sequence data for phylogenetic analysis.
@@ -169,7 +150,7 @@ $(document).ready(function() {
 							
 							<p>
 								<b>Citation</b>:
-								<div class="highlight">
+								<div class="well">
 									<b>Peña, C. &amp; Malm, T.</b> 2012. VoSeq: a Voucher and DNA Sequence Web Application. <i>PLoS ONE</i>, 7(6): e39071. <a href="http://dx.doi.org/10.1371/journal.pone.0039071">doi:10.1371/journal.pone.0039071</a>
 								</div>
 							</p>
@@ -199,27 +180,22 @@ $(document).ready(function() {
 								VoSeq is an open source project, you are welcome to contribute.
 								<br />
 								Open source code and downloads here: 
-								<span class="downloadUrl"><a href="https://github.com/carlosp420/VoSeq">https://github.com/carlosp420/VoSeq<img src="images/download.png" /></a></span>
+								<span class="downloadUrl"><a href="https://github.com/carlosp420/VoSeq/tags">https://github.com/carlosp420/VoSeq/tags<img src="images/download.png" /></a></span>
 							</p>
 
 							<p>
 								<span class="applicationCategory">molecular phylogenetics, database, web application</span><br />
 								<img itemprop="image" src="http://nymphalidae.utu.fi/cpena/images/voseq.png" />
 							</p>
-							
-						</div>
-					</div>
-					<br/>
-					<br/>
+        </div>
+    </div> <!-- row-fluid -->
 
+    <hr>
 
-
-
-					<div class="post">
+    <div class="row-fluid">
+        <div class="span10">
 						<h3>Partitioned Bermer Support script for TNT: <code>pbsup.run<a name="pbs"> </a></code></h3>
-						<div class="contentarea">
-							<div class="details">Posted on Sept 23, 2011
-							</div>
+							<small>Posted on Sept 23, 2011 </small>
 							<p>
 								If you have a dataset with several partitions (morphological and molecular data or several gene sequences) and you want to calculate the Partitioned Bremer Support (PBS) values for nodes using the <a href="http://www.zmuc.dk/public/phylogeny/TNT/">Cladistic software TNT</a>, you may want to try out my <code>pbsup.run</code> script. 
 							</p>
@@ -227,7 +203,9 @@ $(document).ready(function() {
 								It seems that there is more than one way to calculate Bremer support and Partitioned Bremer Support values. This script uses the methodology proposed by:<br /> <i>Gatesy, J. et al. 1999. Cladistics, 15, 271-313.</i> <a href="http://dx.doi.org/10.1111/j.1096-0031.1999.tb00268.x">doi:10.1111/j.1096-0031.1999.tb00268.x</a>
 							</p>
 							<p>
-							This script was first used in our paper:<br /> <b>Peña, C., Wahlberg, N., Weingartner, E., Kodandaramaiah, U., Nylin, S., Freitas, A. V. L., & Brower, A. V. Z. (2006).</b> Higher level phylogeny of Satyrinae butterflies (Lepidoptera: Nymphalidae) based on DNA sequence data. Molecular Phylogenetics and Evolution, 40(1), 29-49. <a href="http://dx.doi.org/10.1016/j.ympev.2006.02.007">doi:10.1016/j.ympev.2006.02.007</a>
+                            This script was first used in our paper:<br /> 
+                            <div class="well"><b>Peña, C., Wahlberg, N., Weingartner, E., Kodandaramaiah, U., Nylin, S., Freitas, A. V. L., & Brower, A. V. Z. (2006).</b> Higher level phylogeny of Satyrinae butterflies (Lepidoptera: Nymphalidae) based on DNA sequence data. Molecular Phylogenetics and Evolution, 40(1), 29-49. <a href="http://dx.doi.org/10.1016/j.ympev.2006.02.007">doi:10.1016/j.ympev.2006.02.007</a>
+                            </div>
 							<br />
 							Please cite it if you find the <code>pbsup.run</code> script useful.
 							</p>
@@ -238,25 +216,25 @@ $(document).ready(function() {
 							<ol>
 								<li>Your data should be in a file named <code>dataset.tnt</code></li>
 								<li>Each of your partitions should be in a different "block". It doesn't work if you have all your partitions in one continuous line. Thus, your data should be interleaved. It is important to precede each block with <code>&amp;[dna]</code> or <code>&amp;[num]</code> (if your partition is molecular data). Something like this:<br />
-								<code>
-									nstates dna<br />
-									xread<br />
-									'Exported by .......'<br />
-									4494 95<br />
-									<br />
-									&[dna]<br />
-									Aus_sp1 ACTAGACAGGATTA<br />
-									Aus_sp2 AGCAGAGCCAATAA<br />
-									...<br />
-									...<br />
-									<br />
-									&[dna]<br />
-									Aus_sp1 AACTTATATTGATAGCA<br />
-									Aus_sp2 AAGACGATAGACAGTAT<br />
-									...<br />
-									;<br />
-									proc/;<br />
-								</code>
+<pre>
+nstates dna
+xread
+'Exported by .......'
+4494 95
+
+&amp;[dna]
+Aus_sp1 ACTAGACAGGATTA
+Aus_sp2 AGCAGAGCCAATAA
+...
+...
+
+&amp;[dna]
+Aus_sp1 AACTTATATTGATAGCA
+Aus_sp2 AAGACGATAGACAGTAT
+...
+;
+proc/;
+</pre>
 </li>
 								<li>Find all your most parsimonious trees and save them in parenthetical notation in a file named <code>alltrees.tre</code> -> Commands: <code>tsave *alltrees.tre; save; tsave/;</code></li>
 								<li>Calculate a strict consensus tree and save it (Commands: <code>nelsen*; tsave *base.tre; save/; tsave/;</code>) in a file named <code>base.tre</code></li>
@@ -266,16 +244,17 @@ $(document).ready(function() {
 								<li>When the script is done, you will see a new file <code>pbs.out</code> which is actually the strict consensus tree with the Partitioned Bremer Support values attached to their respective node.</li>
 								<li>To see the tree and PBS values, enter TNT, open your dataset, load your <code>pbs.out</code> tree (Command <code>proc pbs.out</code>) and type the command <code>ttag;</code> or selecting Trees/MultipleTags/ShowSave if you are using the windows point and click version of TNT.</li>
 							</ol>
-							
-						</div>
-					</div>
-					<br/>
-					<br/>
-					<div class="post">
+        </div>
+    </div> <!-- row-fluid -->
+
+
+
+
+
+    <div class="row-fluid">
+        <div class="span10">
 						<h3>Troubleshooting</h3>
-						<div class="contentarea">
-							<div class="details">Posted on Feb 16, 2012
-							</div>
+							<small>Posted on Feb 16, 2012 </small>
 							If you have big datasets (more than 250 taxa) you will need to increase the RAM memory allocated to TNT.
 							By default TNT uses only 16MB of your computer's RAM memory.</li>
 							<ol>
@@ -292,21 +271,35 @@ $(document).ready(function() {
 									One way to fix this is to change the rounding in the script to 2 or 3 decimals.  
 									For example, in the script, look for the code:<br /> <code>macfloat 1</code> <br />and change it to<br /> <code>macfloat 3</code> <br />(it appears twice in the code).</li>
 							</ol>
-						</div>
-					</div>
+        </div>
+    </div> <!-- row-fluid -->
 
-				<!-- Primary content area end -->
-				</div>
-			</div>
-		</div>
+
+
+
+
+    <footer id="footer">
+			<div class="left">&copy; 2013 Nymphalidae Systematics Group</div>
+    </footer>
+</div><!-- container -->
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="jquery/google-analytics.js"></script>
+
+    <script src="jquery/jquery.js"></script>
+    <script src="jquery/bootstrap.min.js"></script>
+    <script src="jquery/citations.js" type="text/javascript"></script>
+
+
+
+							
+
+
+
 	
-		<div id="footer">
-			<div class="left">&copy; 2012 Nymphalidae Systematics Group</div>
-			<div class="right">Design by <a href="http://www.nodethirtythree.com/">NodeThirtyThree Design</a>
-			</div>
-		</div>
-	
-</div>
 
 
 
