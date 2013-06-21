@@ -18,14 +18,34 @@ include_once("conf.php");
 
 
 ?>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<script src="<?php echo $base_url; ?>jquery/jquery.js" type="text/javascript"></script>
-	<link href="<?php echo $base_url; ?>minimal.css" rel="stylesheet" type="text/css" media="screen" />
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="SHORTCUT ICON" href="favicon.ico" />
+<title>Citations for doi <?php echo $doi; ?></title>
+
+    <!-- Le styles -->
+    <link rel="stylesheet" href="<?php echo $base_url; ?>css/bootstrap.css">
+    <link rel="stylesheet" href="<?php echo $base_url; ?>css/bootstrap-responsive.css">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="jquery/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="img/favicon.ico">
+
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
 
-	<title>Citations for doi <?php echo $doi; ?></title>
+	<script src="<?php echo $base_url; ?>jquery/jquery.js" type="text/javascript"></script>
 
 	<script>
 	$(document).ready(function() {
@@ -83,25 +103,38 @@ include_once("conf.php");
 
 
 	</script>
+
+
 </head>
 <body>
 
 
-<div id="content">
-<h1>Citations for:</h1>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span9">
+            <h1>Citations for:</h1>
+
+            <div id="my_doi"></div>
 
 
-<div id="my_doi"></div>
+            <span style="font-size: 0.8em">Taken from Google Scholar using <a href="http://bit.ly/SCegc2">https://github.com/carlosp420/google_scholar_parser <img src="<?php echo $base_url; ?>images/octocat.png" /></a> </span>
 
+            <hr>
 
-<span style="font-size: 0.8em">Taken from Google Scholar using <a href="http://bit.ly/SCegc2">https://github.com/carlosp420/google_scholar_parser <img src="<?php echo $base_url; ?>images/octocat.png" /></a> </span>
+            <div id="citations"></div>
 
-<div id="citations"></div>
+        </div>
+        <div class="span3">
+        </div>
+    </div>
+
+    <div id="footer">&nbsp;</div>
 
 </div>
 
 
-<div id="footer">&nbsp;</div>
-
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
 </body>
 </html>
