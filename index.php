@@ -166,29 +166,25 @@ if( $twitter != "FALSE" ) {
 
 
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<!--
-
-	zenlike1.0 by nodethirtythree design
-	http://www.nodethirtythree.com
-
--->
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta content="gvim" name="GENERATOR" />
-<meta name="keywords" lang="en" content="department of genetics, butterflies,butterfly,evolution,phylogeny,Satyrinae,Neotropics,Nymphalidae,DNA, sequences, database" />
-<meta name="keywords" lang="es" content="mariposas, mariposa, evolucion, filogenia, Satyrinae, Neotropico, Nymphalidae" />
-<meta content="Carlos Pe&ntilde;a's webpage on research on butterflies and moths" name="description" />
-<meta content="Carlos Pe&#241;a Bieberach" name="author" />
-<meta content="global" name="distribution" />
-<meta name="REVISIT-AFTER" content="7 days" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="SHORTCUT ICON" href="favicon.ico" />
-<title>Dr. Carlos Peña - Evolutionary history of butterflies</title>
+    <meta charset="utf-8" />
+    <meta content="gvim" name="GENERATOR" />
+    <meta name="keywords" lang="en" content="department of genetics, butterflies,butterfly,evolution,phylogeny,Satyrinae,Neotropics,Nymphalidae,DNA, sequences, database" />
+    <meta name="keywords" lang="es" content="mariposas, mariposa, evolucion, filogenia, Satyrinae, Neotropico, Nymphalidae" />
+    <meta content="Carlos Pe&ntilde;a's webpage on research on butterflies and moths" name="description" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Carlos Pe&#241;a Bieberach" name="author" />
+    <meta content="global" name="distribution" />
+    <meta name="REVISIT-AFTER" content="7 days" />
+    <title>Dr. Carlos Peña - Evolutionary history of butterflies</title>
 
+	<link rel="stylesheet" type="text/css" href="css/bootstrap_index.css" />
 	<link rel="stylesheet" type="text/css" href="default.css" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
 	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css" />
 	<script src="jquery/jquery.js"></script>
 	<script src="jquery/jquery.isotope.min.js"></script>
 	<script src="jquery/altmetric.js"></script>
@@ -209,42 +205,87 @@ $(document).ready(function() {
 });
 </script>
 
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="jquery/html5shiv.js"></script>
+    <![endif]-->
+
+ <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="img/favicon.ico">
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33283726-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
 </head>
 <body>
-<a href='#filter=showAll' id="showAll" style="DISPLAY:none" data-filter='*' class='filters'>show all</a>
 
-<div id="upbg"></div>
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#">
+                <div itemscope itemtype="http://www.schema.org/Person">
+                <span itemprop="honorificPrefix">Dr</span>
+                <span itemprop="name"><span itemprop="givenName">Carlos</span>
+                <span itemprop="familyName">Peña</span></a>
+                </div>
+            <div class="nav-collapse collapse">
+                <ul class="nav">
+			        <li class="active"><a href="index.php">Home</a></li>
+			        <li><a href="publications.html">Publications</a></li>
+                        <li class="dropdown">
+                            <a href="software.html" class="dropdown-toggle" 
+                                                              data-toggle="dropdown">Software <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="software.html#google_scholar_parser">Google Scholar citations</a></li>
+                                <li><a href="software.html#voseq">Voseq</a></li>
+                                <li><a href="software.html#pbs">Partitioned Bremer Support</a></li>
+                            </ul>
+                        </li>
 
-<div id="outer_index">
-<div itemscope itemtype="http://www.schema.org/Person">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Research <b class="caret"></b></a>
+				        <ul class="dropdown-menu">
+				            <li><a href="Satyrinae_phylogeny.html">Satyrinae phylogeny</a></li>
+				            <li><a href="Forsterinaria.html"><i>Forsterinaria</i></a></li>
+				            <li><a href="euptychiina_references.html">Euptychiina references</a></li>
+				            <li><a href="lamas_references.html">Lamas references</a></li>
+				        </ul>
+			        </li>
+			        <li><a href="http://nymphalidae.utu.fi/Vouchers.htm">Voucher's db</a></li>
+			        <li><a href="http://www.nymphalidae.net/taxon_db/">Taxon db</a></li>
+			        <li><a href="http://nsg-databases.blogspot.com">Blog</a></li>
+                </ul>
+                <a href='#filter=showAll' id="showAll" style="DISPLAY:none" data-filter='*' class='filters'>show all</a>
+            </div>
+        </div>
+    </div>
+</div>
 
-	<div id="header">
-		<div id="headercontent">
-			<h1><span itemprop="honorificPrefix">Dr</span> <span itemprop="name"><span itemprop="givenName">Carlos</span> <span itemprop="familyName">Peña</span></span></h1>
-		</div>
-	</div>
 
-	<div id="menu">
-		<!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
-		<ul id="drop">
-			<li><a href="index.php" class="active">Home</a></li>
-			<li><a href="publications.html">Publications</a></li>
-			<li><a href="software.html">Software</a></li>
-			<li style="width: 100px;text-align: center;"><a href="#">Research</a>
-				<ul>
-					<li><a href="Satyrinae_phylogeny.html">Satyrinae phylogeny</a></li>
-					<li><a href="Forsterinaria.html"><i>Forsterinaria</i></a></li>
-					<li><a href="euptychiina_references.html">Euptychiina references</a></li>
-					<li><a href="lamas_references.html">Lamas references</a></li>
-				</ul>
-			</li>
-			<li><a href="http://nymphalidae.utu.fi/Vouchers.htm">Voucher's db</a></li>
-			<li><a href="http://www.nymphalidae.net/taxon_db/">Taxon db</a></li>
-			<li><a href="http://nsg-databases.blogspot.com">Blog</a></li>
-		</ul>
-	</div>
-	<div id="menubottom">
-	</div>
+
+            
+            
+
 
 	
 	
@@ -329,7 +370,7 @@ foreach( $dois as $doi ) {
 	echo "<a href='#filter=publication' data-filter='.publication' class='filters'><img src='images/kpdf.png' alt='Filter publications' ";
 	echo "title='Filter publications' /></a>";
 
-	echo "<a href='http://dx.doi.org/". $doi . "' title='DOI'><b>doi></b></a>";
+	echo " <a href='http://dx.doi.org/". $doi . "' title='DOI'><b>doi></b></a> ";
 	echo "</div>";
 
 	echo "</div>";
@@ -409,16 +450,10 @@ foreach( $dois as $doi ) {
 						elseif($event_type == "DeleteEvent") {
 							$output_gh .= "<li>carlosp420 deleted ";
 						}
-						elseif($event_type == "WatchEvent") {
-							$output_gh .= "<li>carlosp420 is watching a repo ";
-						}
-						//print_r($event);
-						if( isset($event->payload->ref) ) {
-							preg_match("/refs\/heads\/(.+)/", trim($event->payload->ref), $match);
-							if( count($match) > 0) {
-								if( $match[1] ) {
-									$output_gh .= $match[1];
-								}
+						preg_match("/refs\/heads\/(.+)/", trim($event->payload->ref), $match);
+						if( count($match) > 0) {
+							if( $match[1] ) {
+								$output_gh .= $match[1];
 							}
 						}
 						$output_gh .= " at <i><a href='https://github.com/" . $event->repo->name;
@@ -527,6 +562,13 @@ $(document).ready(function() {
 </script>
 
 
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="jquery/google-analytics.js"></script>
+
+    <script src="jquery/bootstrap.min.js"></script>
 
 </body>
 </html>
