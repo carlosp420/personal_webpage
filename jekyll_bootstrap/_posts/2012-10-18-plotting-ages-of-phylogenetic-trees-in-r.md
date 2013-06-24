@@ -28,7 +28,7 @@ Something like this plot consisting on a simulation of a gen1 estimating a
 crown age of 30Mya, gen2 estimating an age of 50Mya and the combined analysis 
 giving an age of 40Mya.
 
-![center](/figs/1.png) 
+![center](/cpena/blog/assets/figs/1.png) 
 
 This can be done in the ubiquitous statistical software R, and here is the code: [http://dx.doi.org/10.6084/m9.figshare.96636](http://dx.doi.org/10.6084/m9.figshare.96636)
 
