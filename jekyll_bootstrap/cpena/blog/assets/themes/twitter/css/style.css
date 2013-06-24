@@ -1,3 +1,9 @@
+blockquote p {
+    color: #3a87ad;
+    font-size: 14px;
+    line-height: 22px;
+}
+
 /* Custom container */
 .container-fluid {
   margin: 0 auto;
