@@ -2,7 +2,6 @@
 layout: post
 title: "Elevators and Open Access science"
 description: ""
-category: "bioinformatics"
 excerpt: "Kone is a Finnish company dedicated to people flow (it makes escalators, elevators and other machinery). But Kone also has a foundation that finance research in Science, Humanities and Art, Kone foundation (or Koneen Säätiö)"
 tags: [Kone, funding, open access]
 ---
@@ -21,7 +20,8 @@ I like it more now because they started to support the Open Access movement in
 scientific publishing. They sent an email to grant holders a couple of days ago
 saying the following:
 
-    Koneen Säätiö suosittelee tutkijoilleen tieteellisten julkaisujen avointa saatavuutta
+    Koneen Säätiö suosittelee tutkijoilleen tieteellisten julkaisujen avointa
+    saatavuutta
 
 Which means, more or less, that "**the Kone foundation recommends that scientist
 should publish open access papers**".
