@@ -5,7 +5,6 @@ tagline: about my research on evolutionary biology
 ---
 {% include JB/setup %}
 
-<a href="http://nymphalidae.utu.fi/cpena">>> HOME</a>
 
 {% for post in site.posts limit: 5 %}
   <div class="post_info">
