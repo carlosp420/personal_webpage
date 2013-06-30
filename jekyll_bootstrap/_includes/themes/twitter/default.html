@@ -4,7 +4,14 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
-    <meta name="author" content="{{ site.author.name }}">
+    <meta name="author" content="{{ site.author.name }}"/>
+    <meta name="keywords" content=" {% for i in page.tags %} {{i}}, {% endfor %} "/>
+
+    <!-- Google Scholar Metadata -->
+    <meta name="citation_author" content="{{ site.author.name }}"/>
+    <meta name="citation_publication_date" content="{{ page.date | date: '%Y-%m-%d' }}"/>
+    <meta name="citation_title" content="{{ page.title }}"/>
+    <meta name="citation_journal_title" content="{{ site.citation_journal_title }}"/>
 
     <!-- Enable responsive viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
