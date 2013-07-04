@@ -18,7 +18,7 @@ to pull your timings towards the past. Saturation in the 3rd codon position
 might be accused for responsibility  (you can inspect the saturation level with
 some cool plots).
 
-Brandley et al. (2011) use a nice way to figure out whether some of your genes
+Brandley et al. [-@brandley2011] use a nice way to figure out whether some of your genes
 might be giving very different time estimates for your trees. You can select 
 1000 random trees from your BEAST run and plot the distributions of the ages 
 for the crown group of different genes, different codon positions and the 
@@ -110,7 +110,5 @@ legend(cex = 0.8, "topleft", legend.txt, pch = 22, lwd = 0, pt.bg = legend.color
     title = "Locus", pt.cex = 2)
 {% endhighlight %}
 
-{% cite brandley2011 %} 
 
-#### References
-{% bibliography --cited %}
+### References

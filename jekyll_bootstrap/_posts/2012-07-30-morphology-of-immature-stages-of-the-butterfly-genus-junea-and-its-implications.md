@@ -39,7 +39,7 @@ biogeographical explanations for such close relationships of among currently dis
 
 {% image /cpena/blog/assets/figs/pupas.png "Pupae of <i>Junea doraete</i> (left) and <i>Eteona tisiphone</i> (right)." %}
 
-#### References
+### References
 * Freitas, A. V. L. 2002. Immature stages of *Eteona tisiphone* (Nymphalidae Satyrinae). *Journal of the Lepidopterists’ Society* 56, 286-288. [http://bit.ly/NReImD](http://bit.ly/NReImD).
 * Montero Abril, F. & Perez, M. O. 2012. Estados inmaduros e historia natural de algunas especies de la subtribu Pronophilina (Nymphalidae: Satyrinae) presentes en el paramo del Tablazo, Colombia. I. *Junea doraete doraete* (Hewitson 1858). *Tropical Lepidoptera Research* 22, 32-41. [http://bit.ly/N1d0wu](http://bit.ly/N1d0wu).
 * Carlos Peña, Niklas Wahlberg, Elisabet Weingartner, Ullasa Kodandaramaiah, Sören Nylin, André V.L. Freitas, Andrew V.Z. Brower. 2006. Higher level phylogeny of Satyrinae butterflies (Lepidoptera: Nymphalidae) based on DNA sequence data. *Molecular Phylogenetics and Evolution*, 40 (1), 29-49 [doi:10.1016/j.ympev.2006.02.007](http://nymphalidae.utu.fi/Penaetal2006.pdf).

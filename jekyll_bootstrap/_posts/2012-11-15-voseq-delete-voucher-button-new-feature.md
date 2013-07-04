@@ -1,4 +1,4 @@
----
+
 layout: post
 title: "VoSeq: delete voucher button (new feature)"
 description: ""
@@ -14,7 +14,7 @@ tags: [VoSeq, database]
 Dear VoSeq users,
 
 
-Little by little we are doing some progress on VoSeq's {% cite pena2012 %}
+Little by little we are doing some progress on VoSeq's in Peña & Malm [-@pena2012]
 TODO list.
 
 We have released a new micro-version of **VoSeq: 1.3.1**
@@ -32,6 +32,5 @@ You can download VoSeq from github:
 <https://github.com/carlosp420/VoSeq/tags>
 
 
-#### References
+### References
 
-{% bibliography --cited %}

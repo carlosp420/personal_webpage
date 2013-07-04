@@ -3,8 +3,7 @@ layout: post
 title: "Error rates of IonTorrent sequencing"
 description: ""
 category: "bioinformatics"
-excerpt: "As I process the data sequences from our in-house IonTorrent Next 
-    Generation Sequencer, I can't stop noticing quite many sequencing errors in my
+excerpt: "As I process the data sequences from our in-house IonTorrent Next Generation Sequencer, I can't stop noticing quite many sequencing errors in my
     reads. There are a number of gaps, insertions and mismatches in the index 
     region (and primer region as well). I would expect many of these errors in..."
 tags: [Next Generation Sequencing, IonTorrent, bioinformatics]
@@ -19,12 +18,13 @@ primer region, but not in the index region. Not so many anyway.
 It may be interesting to run our libraries in Illumina to compare the error 
 rate in both sequencing technologies.
 
-A recent paper {% cite golan2013 %} has made discouraging statements about the
-error rate of sequences produced by the IonTorrent:
+
+A recent paper by Golan & Medvedev [-@golan2013] has made discouraging statements
+about the error rate of sequences produced by the IonTorrent:
 
 > "Despite its advantages, Ion Torrent read accuracy remains a significant concern"
 
-According to Golan & Medvedev, the base-calling process of the IonTorrent 
+According to Golan & Medvedev [-@golan2013], the base-calling process of the IonTorrent 
 is very simple. It involves rounding the measurements of changes in electricity as
 nucleotides are incorporated during the sequencing cycles. Which is very prone 
 to errors as distinguishing electricity changes becomes difficult due to higher
@@ -42,6 +42,5 @@ back to the IonTorrent server test whether this software improves my reads.
 
 
 
-#### References
+### References
 
-{% bibliography --cited %}
