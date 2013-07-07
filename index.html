@@ -83,16 +83,28 @@
 
     <div class="container-fluid">
         <div class="row-fluid">
+
+			<div itemscope itemtype="http://schema.org/Person">
+
             <div class="span4">
                 <h3>Contact</h3>
+				
+				<img src="profile_photo.png" width="96px" height="96px" alt="Carlos Pena" itemprop="image" />
+				<br/>
+				<br/>
 
-                <a href="https://plus.google.com/114733468787777337891?rel=author">+Carlos Peña</a><br />
-                Laboratory of Genetics<br />
-                Department of Biology <br />
-                University of Turku <br />
-                FI-20014<br />
-                Turku<br />
-                FINLAND<br />
+                <a href="https://plus.google.com/114733468787777337891?rel=author">+<span itemprop="name">Carlos Peña</span></a><br />
+					
+					<div itemprop="address" itemscope itemtype="http://www.schema.org/PostalAddress">
+						Laboratory of Genetics<br />
+						Department of Biology <br />
+						University of Turku <br />
+					
+						<span itemprop="postalCode">FI-20014</span><br />
+						<span itemprop="addressLocality">Turku</span><br />
+						FINLAND<br />
+					</div>
+				
                 
                 <p><br />Email: <img class="email" src="images/email.png" alt="email address" /></p>
                 <iframe src="http://figshare.com/badges/4/97834" frameborder="0" width="260" height="25"></iframe>
@@ -103,19 +115,16 @@
 
 				<p>My <a href="http://scholar.google.com/citations?user=y4uTyvsAAAAJ">citations in Google Scholar.</a></p>
             </div>
+
+
             <div class="span8">
                 <h2>Profile</h2>
                 
-                <p>I am currently a postdoctoral researcher in 
+                <p>I am currently a <span itemprop="jobTitle">postdoctoral researcher</span> in 
                 <a href="../">The Nymphalidae Systematics Group (NSG)</a>, at the
-                Laboratory of Genetics, Department of Biology, University of Turku,
-                working with <a href="../Wahlberg.htm">Niklas Wahlberg</a>.
+                <span itemprop="affiliation">Laboratory of Genetics, Department of Biology, University of Turku</span>,
+                working with <a href="../Wahlberg.htm"><span itemprop="colleague">Niklas Wahlberg</span></a>.
                 </p>
-
-                <img src="profile_photo.png" width="96px" height="96px" alt="Carlos Pena">
-
-                <br />
-                <br />
 
                 <p>I am working on the diversification of species in Lepidoptera.</p>
 
@@ -136,6 +145,9 @@
 
 
             </div>
+
+			</div>
+
         </div>
 
         <footer id="footer">
