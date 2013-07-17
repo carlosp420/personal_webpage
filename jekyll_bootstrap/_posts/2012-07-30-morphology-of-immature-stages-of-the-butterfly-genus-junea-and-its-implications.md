@@ -4,7 +4,7 @@ title: "Morphology of immature stages of the butterfly genus Junea and its impli
 description: "Immature stages of the Pronophiline Junea (Nymphalidae: Satyrinae)"
 category: "Taxonomy"
 excerpt: "Fredy Montero was very kind to send me his recent publication (with Maira Ortiz) describing morphological characters of eggs, larvae and pupae of  the satyrine butterfly genus Junea."
-tags: [Butterflies, Eteona tisiphone, filogenia., Foetterleia, Junea doraete, morphology, nymphalidae, paper, Pronophila]
+tags: [Butterflies, Eteona tisiphone, filogenia, Foetterleia, Junea doraete, morphology, nymphalidae, paper, Pronophila]
 ---
 {% include JB/setup %}
 

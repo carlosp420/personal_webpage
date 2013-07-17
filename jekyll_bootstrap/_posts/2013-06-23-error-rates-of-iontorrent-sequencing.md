@@ -6,7 +6,7 @@ category: "bioinformatics"
 excerpt: "As I process the data sequences from our in-house IonTorrent Next Generation Sequencer, I can't stop noticing quite many sequencing errors in my
     reads. There are a number of gaps, insertions and mismatches in the index 
     region (and primer region as well). I would expect many of these errors in..."
-tags: [Next Generation Sequencing, IonTorrent, bioinformatics]
+tags: [Next Generation Sequencing, Ion Torrent, bioinformatics]
 ---
 {% include JB/setup %}
 
