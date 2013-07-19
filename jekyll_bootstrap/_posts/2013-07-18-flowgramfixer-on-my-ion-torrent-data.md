@@ -9,6 +9,13 @@ tags: [Ion Torrent, Next Generation Sequencing]
 ---
 {% include JB/setup %}
 
+A recent paper by -@golan2013 describe a method and software 
+(**flowgramFixer**) to improve the base-calling results of 
+Ion Torrent runs.
+
+[I had noticed that some of my reads have many insertions](http://nymphalidae.utu.fi/cpena/blog/2013/06/23/error-rates-of-iontorrent-sequencing/),
+gaps and mismatches even in the index region.
+
 I tried to run flowgramFixer [@golan2013] on my data. I downloaded
 the SFF file from our Ion Torrent server and run ``flower``.
 
