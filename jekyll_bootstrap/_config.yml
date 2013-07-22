@@ -62,7 +62,7 @@ production_url: http://nymphalidae.utu.fi/cpena/blog
 #
 JB:
   version: 0.3.0
-  BASE_PATH: http://nymphalidae.utu.fi/cpena/blog
+  BASE_PATH: /cpena/blog
 
   # All links will be namespaced by BASE_PATH if defined.
   # Links in your website should always be prefixed with {{BASE_PATH}}
