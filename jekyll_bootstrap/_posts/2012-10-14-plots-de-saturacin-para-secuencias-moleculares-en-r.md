@@ -105,7 +105,8 @@ create_plots(files)
 {% endhighlight %}
 
 Y este es el resultado final para el gen wingless.
-![center](/cpena/blog/assets/figs/2.png)
+![Saturation  plot](/cpena/blog/assets/figs/2.png)
+
 Es importante el orden al plotear los puntos, primero los más abundantes. Así es posible ver todos.
 
 
