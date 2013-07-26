@@ -14,7 +14,7 @@ butterfly genus *Junea*.
 
 They raised the specimens on the hostplant *Chusquea* in Colombia. What I found
 most interesting is the morphology of the last instars of the larva. They have
-very long "horns" and long bifid "tails".
+very long *horns* and long bifid *tails*.
 
 {% image /cpena/blog/assets/figs/junea_doraete1.png "Head of Junea doraete larva. <a href='http://bit.ly/N1d0wu'>http://bit.ly/N1d0wu</a>" %}
 

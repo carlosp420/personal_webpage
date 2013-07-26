@@ -11,14 +11,14 @@ tags: [Altmetric, API, Application programming interface, PLoS, PLoS ONE, Twitte
 Just got an email from PLoS ALM Team saying that they are updating their API 
 for their Article Level Metrics (ALM; Altmetric) tools.
 
-The Almetric software shows "citation" data on scientific papers harvested from
+The Almetric software shows *citation* data on scientific papers harvested from
 social networks such as Twitter, Scientific Blogs, Citeulike and Mendeley. They
 deliver this content via their very easy API.
 
 You could also visit their website <http://altmetric.com/> and enter a DOI number
 for your favorite paper and see how many citations from social network it has.
-Also you can see the "hot" papers that have the most number of citations so are
-the one that "everybody" is reading right now.
+Also you can see the *hot* papers that have the most number of citations so are
+the one that *everybody* is reading right now.
 
 I am using the altmetric API for <a href="http://nymphalidae.utu.fi/cpena/">my website</a>
 and noticed that there seems to be a mix up in the data that was harvested for 

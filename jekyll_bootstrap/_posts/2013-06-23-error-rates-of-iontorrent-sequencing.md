@@ -22,7 +22,7 @@ rate in both sequencing technologies.
 A recent paper by Golan & Medvedev [-@golan2013] has made discouraging statements
 about the error rate of sequences produced by the IonTorrent:
 
-> "Despite its advantages, Ion Torrent read accuracy remains a significant concern"
+> Despite its advantages, Ion Torrent read accuracy remains a significant concern
 
 According to Golan & Medvedev [-@golan2013], the base-calling process of the IonTorrent 
 is very simple. It involves rounding the measurements of changes in electricity as

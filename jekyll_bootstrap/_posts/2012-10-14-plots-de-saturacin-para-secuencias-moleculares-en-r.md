@@ -13,7 +13,7 @@ tags: [R, DNA sequences, saturation plots]
 
 Estuve buscando un programa que realice gráficos mostrando los niveles de 
 transiciones y tranversiones en secuencias de ADN. Se supone que el tercer 
-codon de una secuencia de ADN tiende a llegar a "saturación" debido a que el 
+codon de una secuencia de ADN tiende a llegar a *saturación* debido a que el 
 código genético es degenerado (varios tripletes codifican el mismo aminoácido).
 Esta saturación ocurre cuando las mutaciones en el tercer codón han sido tan 
 frecuentes que ya no llevan información filogenética. Es decir, se llega al grado

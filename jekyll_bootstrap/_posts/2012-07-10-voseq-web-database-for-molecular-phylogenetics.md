@@ -14,7 +14,7 @@ tags: [DOI, PLoS ONE, publication, VoSeq, voucher database]
 * Do you wish there was a easy-to-use database to keep track of sequences and their associated voucher specimens? 
 * Did you ever wished there was a system to create molecular datasets for analysis in PAUP or MrBayes by just a few clicks of a mouse? 
 
-If the answers are "yes", then **VoSeq** might be for you. **VoSeq** is a voucher and DNA
+If the answers are *yes*, then **VoSeq** might be for you. **VoSeq** is a voucher and DNA
 sequence web application database aimed for people working in molecular phylogenetics.
 
 Main features of **VoSeq**:

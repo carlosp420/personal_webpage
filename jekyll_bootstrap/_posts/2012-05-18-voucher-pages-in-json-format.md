@@ -25,7 +25,7 @@ you will see an interface created for humans:
 
 ![VoSeq figure](/cpena/blog/assets/figs/nw71-1.png)
 
-If you add to the URL the option **"&format=json"** [http://nymphalidae.utu.fi/story.php?code=NW85-8&format=json](http://nymphalidae.utu.fi/story.php?code=NW85-8&format=json),
+If you add to the URL the option **&format=json** [http://nymphalidae.utu.fi/story.php?code=NW85-8&format=json](http://nymphalidae.utu.fi/story.php?code=NW85-8&format=json),
 you will get all the data in JSON format:
 
 {% highlight json %}

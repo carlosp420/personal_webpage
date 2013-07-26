@@ -8,7 +8,7 @@ tags: [Kone, funding, open access]
 {% include JB/setup %}
 
 [Kone](http://www.kone.com/countries/fi_FI/Pages/default.aspx) is a Finnish 
-company "**dedicated to people flow**" (it makes escalators, elevators and other
+company **dedicated to people flow** (it makes escalators, elevators and other
 machinery). But Kone also has a foundation that finance research in Science, 
 Humanities and Art, Kone foundation (or [Koneen Säätiö](http://www.koneensaatio.fi/en/)).
 
