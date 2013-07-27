@@ -1,3 +1,7 @@
+ol.publist li {
+    padding-bottom: 10px;
+}
+
 /* Custom container */
 .container-fluid {
   margin: 0 auto;
