@@ -1,3 +1,5 @@
+paginate: 10
+
 markdown: pandoc
 pandoc:
   extensions: 

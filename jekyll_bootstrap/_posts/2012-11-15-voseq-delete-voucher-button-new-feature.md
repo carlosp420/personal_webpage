@@ -1,4 +1,4 @@
-
+---
 layout: post
 title: "VoSeq: delete voucher button (new feature)"
 description: ""
