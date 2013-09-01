@@ -14,17 +14,17 @@ El profesor César Arana alerta en Facebook acerca del proyecto de ley del MINAM
 
 El Ministerio del Ambiente (MINAM) quiere reglamentar el uso de recursos genéticos del Perú. Supongo que quieren asegurarse que derivados genéticos del Perú y que resulten en negocios millonarios estén obligados a retribuir al Perú de alguna forma (impuestos?, una tajada de las ganancias?). Eso suena bien, pero el problema es que meten en el mismo saco a los investigadores que hacen ciencia básica.
 
-Entonces el asunto queda algo absurdo. Un investigador peruano con casi cero en fondos para hacer investigación, tiene que soportar toda la ley aplicable a empresas con laboratorios modernos, con equipos y presupuesto millonarios, que normlamente se requieren para hacer investigación aplicada y aprovechar recursos genéticos con fines comerciales. 
+Entonces el asunto queda algo absurdo. Un investigador peruano con casi cero en fondos para hacer investigación, tiene que soportar toda la ley aplicable a empresas con laboratorios modernos, con equipos y presupuesto millonarios, que normalmente se requieren para hacer investigación aplicada y aprovechar recursos genéticos con fines comerciales. 
 
 [Por ejemplo modificar genéticamente las naranjas puede costar como mínimo 5 millones de dólares](http://www.nytimes.com/2013/07/28/science/a-race-to-save-the-orange-by-altering-its-dna.html), aprovechar los recursos genéticos para producir arroz con alto contenido de beta-caroteno, "Golden Rice",  cuesta tanto dinero que [tiene que ser financiado por la fundación del Bill y Melinda Gates](http://www.nytimes.com/2013/08/25/sunday-review/golden-rice-lifesaver.html?pagewanted=all).
 
-Estas iniciativas requiren de mucho dinero y obviamente deben ser controladas por estado, sobretodo aquellas que puedan generar ventas millonarias.
+Estas iniciativas requiren de mucho dinero y obviamente deben ser controladas por el estado, sobretodo aquellas que puedan generar ventas millonarias.
 
 Pero en el caso de nosotros los investigadores peruanos? Con presupuestos de 8 mil soles en total **para TODO un año**? Será que asumen que la investigación de científicos peruanos terminará en transgénicos comercializados por Monsanto? y por lo tanto también se les debe aplicar la misma reglamentación?
 
 La gente del ministerio debería leer la producción científica de investigadores peruanos y se darían cuenta que hacemos investigación **BÁSICA**, **sin fines comerciales**. Los invito a leer la [Revista Peruana de Biología](http://revistasinvestigacion.unmsm.edu.pe/index.php/rpb/issue/view/101/showToc) donde verán qué tipo de investigación se hace.
 
-Lo que hace esta reglamentación del MINAN es dificultar más la investigación básica en el Perú. Hace que sea más burocrática, costosa y difícil hacer ciencia en el Perú. Tengo colegas que ya llevan varios años esperando que el MINAM les dé un permiso para estudiar el ADN de insectos. **No hay permiso y no se puede publicar, no se publica y uno no se puede graduar, uno no se gradúa y no puede conseguir trabajo. Gracias MINAM!**
+Lo que hace esta reglamentación del MINAM es dificultar más la investigación básica en el Perú. Hace que sea más burocrática, costosa y difícil hacer ciencia en el Perú. Tengo colegas que ya llevan varios años esperando que el MINAM les dé un permiso para estudiar el ADN de insectos. **No hay permiso y no se puede publicar, no se publica y uno no se puede graduar, uno no se gradúa y no puede conseguir trabajo. Gracias MINAM!**
 
 El MINAM ha sometido a consulta y debate público su proyecto de ley, **durante 15 días** útiles luego de promultado la resolución ministerial.
 
